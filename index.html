@@ -54,8 +54,8 @@
             </div>
         </div>
     </header>
-        <!-- 메인 비주얼 / 광고 배너 영역 -->
-    <main class="main-visual">
+    <main>
+        <!-- 메인 광고 배너 영역 -->
         <div class="swiper main-banner-swiper">
             <div class="swiper-wrapper">
                 <!-- 첫 번째 슬라이드 -->
@@ -68,81 +68,352 @@
                 </div>
                 <!-- 두 번째 슬라이드 (추가 예정) -->
             </div>
-            <!-- 슬라이드 페이지네이션 (이미지 하단에 보이는 긴 바 형태의 인디케이터) -->
-            <div class="swiper-pagination"></div>
+            <!-- 슬라이드 이미지 하단에 보이는 긴 바 형태의 인디케이터) -->
+            <div class="scrollbar-container">
+                <div class="scrollbar-thumb"></div> <!-- 진한 검은색 움직이는 바 -->
+            </div>
         </div>
         <!-- 상품 리스트 영역 (BEST / NEW) -->
-    <div class="product-section">
-    <!-- 탭 메뉴 (BEST / NEW) -->
-        <div class="product-tabs">
-            <button type="button" class="tab-btn active">BEST</button>
-            <button type="button" class="tab-btn">NEW</button>
+        <div class="product-section">
+        <!-- 탭 메뉴 (BEST / NEW) -->
+            <div class="product-tabs">
+                <button type="button" class="tab-btn active">BEST</button>
+                <button type="button" class="tab-btn">NEW</button>
+            </div>
+            <!-- 상품 카드 그리드 목록 -->
+            <ul class="product-list">
+                <!-- 1번 상품 -->
+                <li class="product-item">
+                    <a href="#">
+                        <div class="product-img">
+                            <img src="#" alt="꼬임 스트링 레이어드 원터치">
+                        </div>
+                        <div class="product-info">
+                            <p class="product-name">꼬임 스트링 레이어드 원터치</p>
+                            <p class="product-price">49,900원</p>
+                        </div>
+                    </a>
+                </li>
+                <!-- 2번 상품 -->
+                <li class="product-item">
+                    <a href="#">
+                        <div class="product-img">
+                            <img src="#" alt="블랙인덱스 솔라 여성용 커플 메쉬시계">
+                        </div>
+                        <div class="product-info">
+                            <p class="product-name">블랙인덱스 솔라 여성용 커플 메쉬시계</p>
+                            <p class="product-price">55,930원</p>
+                        </div>
+                    </a>
+                </li>
+                <!-- 3번 상품 -->
+                <li class="product-item">
+                    <a href="#">
+                        <div class="product-img">
+                            <img src="#" alt="프롱 체인팔찌">
+                        </div>
+                        <div class="product-info">
+                            <p class="product-name">프롱 체인팔찌</p>
+                            <p class="product-price">219,000원</p>
+                        </div>
+                    </a>
+                </li>
+                <!-- 4번 상품 -->
+                <li class="product-item">
+                    <a href="#">
+                        <div class="product-img">
+                            <img src="#" alt="사랑의약속 볼드 실버 커플링 여성용">
+                        </div>
+                        <div class="product-info">
+                            <p class="product-name">사랑의약속 볼드 실버 커플링 여성용</p>
+                            <p class="product-price">89,900원</p>
+                        </div>
+                    </a>
+                </li>
+                <!-- 5번 상품 -->
+                <li class="product-item">
+                    <a href="#">
+                        <div class="product-img">
+                            <img src="#" alt="퓨어몬트 문라이트 925 실버 목걸이">
+                        </div>
+                        <div class="product-info">
+                            <p class="product-name">퓨어몬트 문라이트 925 실버 목걸이</p>
+                            <p class="product-price">59,900원</p>
+                        </div>
+                    </a>
+                </li>
+            </ul>
         </div>
-        <!-- 상품 카드 그리드 목록 -->
-        <ul class="product-list">
-            <!-- 1번 상품 -->
-            <li class="product-item">
-                <a href="#">
-                    <div class="product-img">
-                        <img src="#" alt="꼬임 스트링 레이어드 원터치">
+        <!-- 컬렉션영역 -->
+        <div class="container">
+            <!-- 제목 -->
+            <div class="container-header"><h2>BRILLIANT COLLECTION</h2></div>
+            <!-- 내용 -->
+            <div class="content-layout">
+                <!-- Left Hero Section -->
+                <div><img src="#" alt="이미지"></div>
+                <!-- Right Products Section -->
+                <div class="product-list">
+                    <!-- Ring -->
+                    <div class="product-card">
+                        <!-- 상품이미지 -->
+                        <img src="#" alt="Ring">
+                        <!-- ring 라벨 -->
+                        <span class="product-tag">Ring</span><!-- css에서 도형 구현 필요 -->
+                        <a href="#" class="more-link">
+                            <span class="text">more</span>
+                            <img src="#" alt="화살표" class="icon">
+                        </a>
                     </div>
-                    <div class="product-info">
-                        <p class="product-name">꼬임 스트링 레이어드 원터치</p>
-                        <p class="product-price">49,900원</p>
+                    <!-- Bracelet -->
+                    <div class="product-card">
+                        <!-- 상품이미지 -->
+                        <img src="#" alt="Bracelet">
+                        <!-- ring 라벨 -->
+                        <span class="product-tag">Bracelet</span><!-- css에서 도형 구현 필요 -->
+                        <a href="#" class="more-link">
+                            <span class="text">more</span>
+                            <img src="#" alt="화살표" class="icon">
+                        </a>
                     </div>
-                </a>
-            </li>
-            <!-- 2번 상품 -->
-            <li class="product-item">
-                <a href="#">
-                    <div class="product-img">
-                        <img src="#" alt="블랙인덱스 솔라 여성용 커플 메쉬시계">
+                    <!-- Necklace -->
+                    <div class="product-card">
+                        <!-- 상품이미지 -->
+                        <img src="#" alt="Bracelet">
+                        <!-- ring 라벨 -->
+                        <span class="product-tag">Bracelet</span><!-- css에서 도형 구현 필요 -->
+                        <a href="#" class="more-link">
+                            <span class="text">more</span>
+                            <img src="#" alt="화살표" class="icon">
+                        </a>
                     </div>
-                    <div class="product-info">
-                        <p class="product-name">블랙인덱스 솔라 여성용 커플 메쉬시계</p>
-                        <p class="product-price">55,930원</p>
+                </div>
+            </div>
+        </div>
+        <!-- MD'S PICK 영역 -->
+        <div class="mds-container">
+            <!-- 제목 -->
+            <div class="mds-header">
+                <h2>MD'S PICK</h2>
+            </div>
+            <!-- 내용 (4개 상품 카드 리스트) -->
+            <div class="mds-list">
+                <!-- 상품 1 -->
+                <div class="md-card">
+                    <div class="md-img-box">
+                        <img src="#" alt="목걸이">
+                        <button class="wish-btn"></button>
                     </div>
-                </a>
-            </li>
-            <!-- 3번 상품 -->
-            <li class="product-item">
-                <a href="#">
-                    <div class="product-img">
-                        <img src="#" alt="프롱 체인팔찌">
+                    <!-- 상품 정보 (이름, 가격) -->
+                    <div class="md-info">
+                        <p class="md-name">오에스티 시뮬럿다이아 0.5ct 밀키웨이 목걸이</p>
+                        <p class="md-price">79,000원</p>
                     </div>
-                    <div class="product-info">
-                        <p class="product-name">프롱 체인팔찌</p>
-                        <p class="product-price">219,000원</p>
+                </div>
+                <!-- 상품 2 -->
+                <div class="md-card">
+                    <div class="md-img-box">
+                        <img src="#" alt="반지">
+                        <button class="wish-btn"></button>
                     </div>
-                </a>
-            </li>
-            <!-- 4번 상품 -->
-            <li class="product-item">
-                <a href="#">
-                    <div class="product-img">
-                        <img src="#" alt="사랑의약속 볼드 실버 커플링 여성용">
+                    <!-- 상품 정보 (이름, 가격) -->
+                    <div class="md-info">
+                        <p class="md-name">스톤 믹스 볼륨 체인 925실버 반지</p>
+                        <p class="md-price">169,000원</p>
                     </div>
-                    <div class="product-info">
-                        <p class="product-name">사랑의약속 볼드 실버 커플링 여성용</p>
-                        <p class="product-price">89,900원</p>
+                </div>
+                <!-- 상품 3 -->
+                <div class="md-card">
+                    <div class="md-img-box">
+                        <img src="#" alt="귀걸이">
+                        <button class="wish-btn"></button>
                     </div>
-                </a>
-            </li>
-            <!-- 5번 상품 -->
-            <li class="product-item">
-                <a href="#">
-                    <div class="product-img">
-                        <img src="#" alt="퓨어몬트 문라이트 925 실버 목걸이">
+                    <!-- 상품 정보 (이름, 가격) -->
+                    <div class="md-info">
+                        <p class="md-name">볼륨 진주 원터치 귀걸이</p>
+                        <p class="md-price">59,000원</p>
                     </div>
-                    <div class="product-info">
-                        <p class="product-name">퓨어몬트 문라이트 925 실버 목걸이</p>
-                        <p class="product-price">59,900원</p>
+                </div>
+                <!-- 상품 4 -->
+                <div class="md-card">
+                    <div class="md-img-box">
+                        <img src="#" alt="여성반지">
+                        <button class="wish-btn"></button>
                     </div>
-                </a>
-            </li>
-        </ul>
-    </div>
+                    <!-- 상품 정보 (이름, 가격) -->
+                    <div class="md-info">
+                        <p class="md-name">하트 통통 360도 데일리 여성반지</p>
+                        <p class="md-price">79,000원</p>
+                    </div>
+                </div>
+            </div>
+            <!-- 버튼 -->
+            <a href="#" class="view-more-btn">
+                <span class="text">VIEW MORE</span>
+                <img src="arrow-icon.png" alt="화살표" class="arrow-icon">
+            </a>
+        </div>
+        <!-- 광고 띠배너 -->
+        <div class="hero-banner">
+            <!-- 텍스트들을 감싸는 콘텐츠 박스 -->
+            <div class="hero-content">
+                <div class="hero-text-box">
+                    <p class="sub-top">OST</p>
+                    <p class="sub-bottom">JEWELRY</p>
+                </div>
+                <p class="collection-name">SUMMER COLLECTION</p>
+                <div>
+                    <div>
+                        <h2 class="main-title">물빛처럼 반짝이는 순간</h2>
+                        <p class="desc">시원한 여름을 닮은 OST 주얼리</p>
+                    </div>
+                    <a href="#">
+                        <span class="view-collection">VIEW COLLECTION</span>
+                        <img src="#" alt="">
+                    </a>
+                </div>
+                <!-- 슬라이더 인디케이터 (점 3개) -->
+                <div class="dots">
+                    <span class="dot active"></span>
+                    <span class="dot"></span>
+                    <span class="dot"></span>
+                </div>
+            </div>
+        </div>
+        <!-- DAILY SILVER 영역 -->
+        <div class="daily-container">
+            <!-- 제목 -->
+            <div class="daily-header">
+                <h2>DAILY SILVER</h2>
+            </div>
+            <!-- 콘텐츠 영역 (왼쪽 큰 배너 + 오른쪽 상품 3개) -->
+            <div class="daily-content">
+                <!-- 왼쪽 큰 배너 이미지 -->
+                <div class="daily-banner">
+                    <img src="#" alt="데일리 실버 배너">
+                </div>
+                <!-- 오른쪽 상품 카드 리스트 (3개) -->
+                <div class="daily-list">
+                    <!-- 상품 1 -->
+                    <div class="daily-card">
+                        <div class="daily-img-box">
+                            <img src="#" alt="행운의 고래 꼬리 925실버 목걸이">
+                            <button class="wish-btn" aria-label="찜하기"></button>
+                        </div>
+                        <div class="daily-info">
+                            <p class="daily-name">행운의 고래 꼬리 925실버 목걸이</p>
+                            <p class="daily-price">49,000원</p>
+                        </div>
+                    </div>
+                    <!-- 상품 2 -->
+                    <div class="daily-card">
+                        <div class="daily-img-box">
+                            <img src="#" alt="퓨어몬드 말발굽 925실버 귀걸이">
+                            <button class="wish-btn" aria-label="찜하기"></button>
+                        </div>
+                        <div class="daily-info">
+                            <p class="daily-name">퓨어몬드 말발굽 925실버 귀걸이</p>
+                            <p class="daily-price">49,000원</p>
+                        </div>
+                    </div>
+                    <!-- 상품 3 -->
+                    <div class="daily-card">
+                        <div class="daily-img-box">
+                            <img src="#" alt="쁘띠 더블 참 팔찌">
+                            <button class="wish-btn" aria-label="찜하기"></button>
+                        </div>
+                        <div class="daily-info">
+                            <p class="daily-name">쁘띠 더블 참 실버 팔찌</p>
+                            <p class="daily-price">69,000원</p>
+                        </div>
+                    </div>
+                </div><!-- daily-list 끝 -->
+                <!-- 스크롤바 띠 추가 -->
+                <div class="scrollbar-container">
+                    <div class="scrollbar-thumb"></div>
+                </div>
+            </div>
+
+        </div>
+        <!-- SHOW ROOM 영역 -->
+        <div class="showroom-container">
+            <!-- 1. 상단 제목 및 설명 영역 -->
+            <div class="showroom-header">
+                <h2>SHOW ROOM</h2>
+                <p class="showroom-info">
+                    OST의 다양한 주얼리와 워치를 가까이에서 만나볼 수 있는 쇼룸입니다.<br>
+                    감각적인 공간에서 나만의 스타일을 발견하고, 특별한 순간을 더욱 빛나게 완성해보세요.
+                </p>
+            </div>
+            <!-- 2. 가운데 이미지 두 개가 나란히 들어가는 콘텐츠 영역 -->
+            <div class="showroom-content">
+                <!-- 왼쪽 큰 쇼룸 이미지 -->
+                <div class="showroom-img-box left">
+                    <img src="#" alt="OST 쇼룸 전경 1">
+                </div>
+                <!-- 오른쪽 쇼룸 이미지 -->
+                <div class="showroom-img-box right">
+                    <img src="#" alt="OST 쇼룸 전경 2">
+                </div>
+            </div>
+            <!-- 3. 하단 버튼 영역 -->
+            <a href="#" class="store-finder-btn">
+                <span>STORE FINDER</span>
+                <img src="#" alt="화살표">
+            </a>
+
+
+        </div>
     </main>
-    <footer></footer>
+    <footer>
+        <!-- 내용 -->
+        <div class="footer-container">
+            <!-- 왼쪽 정보 영역 -->
+            <div class="footer-info">
+                <!-- 로고 -->
+                <div class="footer-logo">
+                    <img src="#" alt="OST 로고">
+                </div>
+                <!-- 기업 정보 텍스트들 -->
+                <div class="company-details">
+                    <p class="company-text">상호. ㈜이월드 쥬얼리사업부 
+                        <span class="bar">/</span> 
+                        대표. 민혜정 
+                        <span class="bar">/</span> 
+                        통신판매업신고번호. 제2025-서울강서-2260
+                    </p>
+                    <p>사업자등록번호. 678-85-01134 <a href="#" class="business-check">[사업자정보확인]</a>
+                        <span class="bar">/</span> 개인정보보호책임자. 민혜정
+                        <span class="bar">/</span>이메일. ost_ONLINE@eland.co.kr
+                    </p>
+                    <p>주소. 서울특별시 강서구 마곡동로 146(마곡동, 이랜드글로벌R&D센터)</p>
+                </div>
+                <!-- 고객센터 정보 -->
+                <div class="customer-center">
+                    <p>고객센터 1600-0455 
+                    <span class="bar">/</span>평일 10:00 ~ 16:00 점심시간 12:00 ~ 13:00 (주말 & 공휴일 휴무)</p>
+                </div>
+
+                <!-- 저작권 -->
+                <p class="copyright">Copyright © ost. All right Reserved.</p>
+            </div>
+            <!-- 오른쪽 메뉴 및 SNS 영역 -->
+            <div class="footer-menu-box">
+                <!-- SNS 아이콘 리스트 -->
+                <div class="sns-links">
+                    <a href="#"><img src="facebook-icon.png" alt="페이스북"></a>
+                    <a href="#"><img src="youtube-icon.png" alt="유튜브"></a>
+                    <a href="#"><img src="instagram-icon.png" alt="인스타그램"></a>
+                </div>
+                <!-- 하단 바로가기 링크들 -->
+                <ul class="policy-links">
+                    <li><a href="#">이용약관</a></li>
+                    <li><a href="#">개인정보처리방침</a></li>
+                    <li><a href="#">OFFLINE STORE</a></li>
+                    <li><a href="#">고객센터</a></li>
+                </ul>
+            </div>
+        </div>
+    </footer>
 </body>
 </html>
