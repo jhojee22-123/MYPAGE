@@ -13,53 +13,77 @@
 </head>
 <body>
     <!-- 헤더 -->
-    <header class="header">
+    <header>
         <!-- 상단 광고 띠 -->
-        <div class="top-banner">
-            <!-- 전체 광고 띠묶음 -->
-            <div class="top-banner-track">
-                <p>OST 베스트셀러 주얼리 컬렉션을 만나보세요.</p>
-                <p><strong>NEW IN</strong> 신상품 더보기</p>
-                <p>OST 베스트셀러 주얼리 컬렉션을 만나보세요.</p>
-                <p><strong>NEW IN</strong> 신상품 더보기</p>
-                <p>OST 베스트셀러 주얼리 컬렉션을 만나보세요.</p>
-                <p><strong>NEW IN</strong> 신상품 더보기</p>
+        <div class="swiper top-banner-swiper">
+            <!-- Swiper Wrapper -->
+            <div class="swiper-wrapper top-banner-track">
+                <!-- 첫 번째 슬라이드 -->
+                <div class="swiper-slide">
+                    <p>OST 베스트셀러 주얼리 컬렉션을 만나보세요.</p>
+                </div>
+                <!-- 두 번째 슬라이드 -->
+                <div class="swiper-slide">
+                    <p><strong>NEW IN</strong> 신상품 더보기</p>
+                </div>
+                <!-- 세 번째 슬라이드 -->
+                <div class="swiper-slide">
+                    <p>OST 베스트셀러 주얼리 컬렉션을 만나보세요.</p>
+                </div>
+                <!-- 네 번째 슬라이드 -->
+                <div class="swiper-slide">
+                    <p><strong>NEW IN</strong> 신상품 더보기</p>
+                </div>
             </div>
         </div>
         <!-- 메인 네비게이션 헤더 영역 -->
         <div class="header-inner">
             <!-- 로고 -->
-            <h1 class="logo">
-                <a href="#">
-                    <img src="#" alt="OST">
-                </a>
-            </h1>
+            <h1 class="logo"><a href="#"><img src="#" alt="OST"></a></h1>
             <!-- 메뉴 -->
-            <nav class="gnb">
-                <ul>
+            <nav>
+                <ul class="gnb">
                     <li><a href="#">BEST</a></li>
                     <li><a href="#">NEW</a></li>
-                    <li><a href="#">CATEGORY</a></li>
+                    <li><a href="#">CATEGORY</a>
+                        <!-- 마우스 호버시 -->
+                        <ul class="sub">
+                            <li><a href="#">RING</a></li>
+                            <li><a href="#">BRACELET</a></li>
+                            <li><a href="#">EARRING</a></li>
+                            <li><a href="#">NECKLACE</a></li>
+                            <li><a href="#">WATCH</a></li>
+                            <li><a href="#">KEYRING</a></li>
+                        </ul>
+                    </li>
                     <li><a href="#">EVENT</a></li>
                     <li><a href="#">BRAND STORY</a></li>
-                    <li><a href="#">COMMUNITY</a></li>
+                    <li><a href="#">COMMUNITY</a>
+                        <!-- 마우스 호버시 -->
+                        <ul class="sub">
+                            <li><a href="#">NOTICE</a></li>
+                            <li><a href="#">REVIEW</a></li>
+                            <li><a href="#">Q&A</a></li>
+                            <li><a href="#">FAQ</a></li>
+                        </ul>
+                    </li>
                 </ul>
             </nav>
             <!-- 아이콘 -->
             <div class="header-icon">
-                <a href="#"><img src="#" alt="검색"></a>
-                <a href="#"><img src="#" alt="찜"></a>
-                <a href="#"><img src="#" alt="마이페이지"></a>
-                <a href="#"><img src="#" alt="장바구니"></a>
+                <a class="icon-search" href="#"><img src="#" alt="검색"></a>
+                <a class="icon-wish" href="#"><img src="#" alt="찜"></a>
+                <a class="icon-mypage" href="#"><img src="#" alt="마이페이지"></a>
+                <a class="icon-cart" href="#"><img src="#" alt="장바구니"></a>
             </div>
         </div>
     </header>
     <main>
         <!-- 메인 광고 배너 영역 -->
         <div class="swiper main-banner-swiper">
-            <div class="swiper-wrapper">
+            <div class="swiper-wrapper banner-list">
                 <!-- 첫 번째 슬라이드 -->
-                <div class="swiper-slide banner-item">
+                <div class="swiper-slide banner-card">
                     <!-- 텍스트 컨텐츠 영역 -->
                     <div class="banner-text">
                         <h2>Shine<br>Your<br>Mind</h2>
@@ -69,19 +93,17 @@
                 <!-- 두 번째 슬라이드 (추가 예정) -->
             </div>
             <!-- 슬라이드 이미지 하단에 보이는 긴 바 형태의 인디케이터) -->
-            <div class="scrollbar-container">
-                <div class="scrollbar-thumb"></div> <!-- 진한 검은색 움직이는 바 -->
-            </div>
+            <div class="swiper-scrollbar"></div>
         </div>
         <!-- 상품 리스트 영역 (BEST / NEW) -->
-        <div class="product-section">
+        <div class="bestnew-container">
         <!-- 탭 메뉴 (BEST / NEW) -->
-            <div class="product-tabs">
+            <div class="bestnew-tabs">
                 <button type="button" class="tab-btn active">BEST</button>
                 <button type="button" class="tab-btn">NEW</button>
             </div>
             <!-- 상품 카드 그리드 목록 -->
-            <ul class="product-list">
+            <ul class="best-list">
                 <!-- 1번 상품 -->
                 <li class="product-item">
                     <a href="#">
@@ -89,7 +111,7 @@
                             <img src="#" alt="꼬임 스트링 레이어드 원터치">
                         </div>
                         <div class="product-info">
-                            <p class="product-name">꼬임 스트링 레이어드 원터치</p>
+                            <h3 class="product-name">꼬임 스트링 레이어드 원터치</p>
                             <p class="product-price">49,900원</p>
                         </div>
                     </a>
@@ -101,7 +123,7 @@
                             <img src="#" alt="블랙인덱스 솔라 여성용 커플 메쉬시계">
                         </div>
                         <div class="product-info">
-                            <p class="product-name">블랙인덱스 솔라 여성용 커플 메쉬시계</p>
+                            <h3 class="product-name">블랙인덱스 솔라 여성용 커플 메쉬시계</p>
                             <p class="product-price">55,930원</p>
                         </div>
                     </a>
@@ -113,7 +135,7 @@
                             <img src="#" alt="프롱 체인팔찌">
                         </div>
                         <div class="product-info">
-                            <p class="product-name">프롱 체인팔찌</p>
+                            <h3 class="product-name">프롱 체인팔찌</p>
                             <p class="product-price">219,000원</p>
                         </div>
                     </a>
@@ -125,7 +147,7 @@
                             <img src="#" alt="사랑의약속 볼드 실버 커플링 여성용">
                         </div>
                         <div class="product-info">
-                            <p class="product-name">사랑의약속 볼드 실버 커플링 여성용</p>
+                            <h3 class="product-name">사랑의약속 볼드 실버 커플링 여성용</p>
                             <p class="product-price">89,900원</p>
                         </div>
                     </a>
@@ -137,7 +159,7 @@
                             <img src="#" alt="퓨어몬트 문라이트 925 실버 목걸이">
                         </div>
                         <div class="product-info">
-                            <p class="product-name">퓨어몬트 문라이트 925 실버 목걸이</p>
+                            <h3 class="product-name">퓨어몬트 문라이트 925 실버 목걸이</p>
                             <p class="product-price">59,900원</p>
                         </div>
                     </a>
@@ -145,19 +167,22 @@
             </ul>
         </div>
         <!-- 컬렉션영역 -->
-        <div class="container">
+        <div class="collection-container">
             <!-- 제목 -->
-            <div class="container-header"><h2>BRILLIANT COLLECTION</h2></div>
+            <div class="collection-header"><h2>BRILLIANT COLLECTION</h2></div>
             <!-- 내용 -->
-            <div class="content-layout">
+            <div class="collection-layout">
                 <!-- Left Hero Section -->
-                <div><img src="#" alt="이미지"></div>
+                <div class="collection-img"><img src="#" alt="이미지"></div>
                 <!-- Right Products Section -->
                 <div class="product-list">
                     <!-- Ring -->
                     <div class="product-card">
-                        <!-- 상품이미지 -->
-                        <img src="#" alt="Ring">
+                        <!-- 상품 hover시 정보-->
+                        <div class="product-info">
+                            <h3 class="product-name">스톤 믹스 볼륨 체인<br>925 실버 반지</h3>
+                            <p class="product-price">59,900원</p>
+                        </div>
                         <!-- ring 라벨 -->
                         <span class="product-tag">Ring</span><!-- css에서 도형 구현 필요 -->
                         <a href="#" class="more-link">
@@ -167,8 +192,11 @@
                     </div>
                     <!-- Bracelet -->
                     <div class="product-card">
-                        <!-- 상품이미지 -->
-                        <img src="#" alt="Bracelet">
+                        <!-- 상품 hover시 정보-->
+                        <div class="product-info">
+                            <h3 class="product-name">플럼프 진주 팔찌</h3>
+                            <p class="product-price">59,900원</p>
+                        </div>
                         <!-- ring 라벨 -->
                         <span class="product-tag">Bracelet</span><!-- css에서 도형 구현 필요 -->
                         <a href="#" class="more-link">
@@ -178,8 +206,11 @@
                     </div>
                     <!-- Necklace -->
                     <div class="product-card">
-                        <!-- 상품이미지 -->
-                        <img src="#" alt="Bracelet">
+                        <!-- 상품 hover시 정보-->
+                        <div class="product-info">
+                            <h3 class="product-name">펄어스 오벌 진주목걸이</h3>
+                            <p class="product-price">169,900원</p>
+                        </div>
                         <!-- ring 라벨 -->
                         <span class="product-tag">Bracelet</span><!-- css에서 도형 구현 필요 -->
                         <a href="#" class="more-link">
@@ -202,11 +233,11 @@
                 <div class="md-card">
                     <div class="md-img-box">
                         <img src="#" alt="목걸이">
-                        <button class="wish-btn"></button>
+                        <button type="button" class="wish-btn"><img src="#" alt="">찜하기</button>
                     </div>
                     <!-- 상품 정보 (이름, 가격) -->
                     <div class="md-info">
-                        <p class="md-name">오에스티 시뮬럿다이아 0.5ct 밀키웨이 목걸이</p>
+                        <h3 class="md-name">오에스티 시뮬럿다이아 0.5ct 밀키웨이 목걸이</p>
                         <p class="md-price">79,000원</p>
                     </div>
                 </div>
@@ -214,11 +245,11 @@
                 <div class="md-card">
                     <div class="md-img-box">
                         <img src="#" alt="반지">
-                        <button class="wish-btn"></button>
+                        <button type="button" class="wish-btn"><img src="#" alt="">찜하기</button>
                     </div>
                     <!-- 상품 정보 (이름, 가격) -->
                     <div class="md-info">
-                        <p class="md-name">스톤 믹스 볼륨 체인 925실버 반지</p>
+                        <h3 class="md-name">스톤 믹스 볼륨 체인 925실버 반지</p>
                         <p class="md-price">169,000원</p>
                     </div>
                 </div>
@@ -226,11 +257,11 @@
                 <div class="md-card">
                     <div class="md-img-box">
                         <img src="#" alt="귀걸이">
-                        <button class="wish-btn"></button>
+                        <button type="button" class="wish-btn"><img src="#" alt="">찜하기</button>
                     </div>
                     <!-- 상품 정보 (이름, 가격) -->
                     <div class="md-info">
-                        <p class="md-name">볼륨 진주 원터치 귀걸이</p>
+                        <h3 class="md-name">볼륨 진주 원터치 귀걸이</p>
                         <p class="md-price">59,000원</p>
                     </div>
                 </div>
@@ -238,11 +269,11 @@
                 <div class="md-card">
                     <div class="md-img-box">
                         <img src="#" alt="여성반지">
-                        <button class="wish-btn"></button>
+                        <button type="button" class="wish-btn"><img src="#" alt="">찜하기</button>
                     </div>
                     <!-- 상품 정보 (이름, 가격) -->
                     <div class="md-info">
-                        <p class="md-name">하트 통통 360도 데일리 여성반지</p>
+                        <h3 class="md-name">하트 통통 360도 데일리 여성반지</p>
                         <p class="md-price">79,000원</p>
                     </div>
                 </div>
@@ -253,30 +284,32 @@
                 <img src="arrow-icon.png" alt="화살표" class="arrow-icon">
             </a>
         </div>
-        <!-- 광고 띠배너 -->
-        <div class="hero-banner">
-            <!-- 텍스트들을 감싸는 콘텐츠 박스 -->
-            <div class="hero-content">
-                <div class="hero-text-box">
-                    <p class="sub-top">OST</p>
-                    <p class="sub-bottom">JEWELRY</p>
-                </div>
-                <p class="collection-name">SUMMER COLLECTION</p>
-                <div>
-                    <div>
-                        <h2 class="main-title">물빛처럼 반짝이는 순간</h2>
-                        <p class="desc">시원한 여름을 닮은 OST 주얼리</p>
+        <!-- 광고 배너 (Swiper 적용) -->
+        <div class="swiper ads-swiper">
+            <!-- Swiper Wrapper -->
+            <div class="swiper-wrapper ads-list ">
+                <!-- 첫 번째 슬라이드 (현재 디자인) -->
+                <div class="swiper-slide ads-card">
+                    <!-- 텍스트들을 감싸는 콘텐츠 박스 -->
+                    <div class="ads-content">
+                        <div class="ads-text-box">
+                            <p class="sub-top">OST</p>
+                            <p class="sub-bottom">JEWELRY</p>
+                        </div>
+                        <p class="collection-name">SUMMER COLLECTION</p>
+                        <div>
+                            <div>
+                                <h2 class="main-title">물빛처럼 반짝이는 순간</h2>
+                                <p class="desc">시원한 여름을 닮은 OST 주얼리</p>
+                            </div>
+                            <a href="#">
+                                <span class="view-collection">VIEW COLLECTION</span>
+                                <img src="#" alt="">
+                            </a>
+                        </div>
+                        <!-- 슬라이더 인디케이터 (점 3개) -->
+                        <div class="swiper-pagination"></div>
                     </div>
-                    <a href="#">
-                        <span class="view-collection">VIEW COLLECTION</span>
-                        <img src="#" alt="">
-                    </a>
-                </div>
-                <!-- 슬라이더 인디케이터 (점 3개) -->
-                <div class="dots">
-                    <span class="dot active"></span>
-                    <span class="dot"></span>
-                    <span class="dot"></span>
                 </div>
             </div>
         </div>
@@ -289,49 +322,47 @@
             <!-- 콘텐츠 영역 (왼쪽 큰 배너 + 오른쪽 상품 3개) -->
             <div class="daily-content">
                 <!-- 왼쪽 큰 배너 이미지 -->
-                <div class="daily-banner">
-                    <img src="#" alt="데일리 실버 배너">
-                </div>
+                <div class="daily-banner"></div>
                 <!-- 오른쪽 상품 카드 리스트 (3개) -->
-                <div class="daily-list">
-                    <!-- 상품 1 -->
-                    <div class="daily-card">
-                        <div class="daily-img-box">
-                            <img src="#" alt="행운의 고래 꼬리 925실버 목걸이">
-                            <button class="wish-btn" aria-label="찜하기"></button>
+                <div class="swiper daily-swiper">
+                    <div class="swiper-wrapper daily-list">
+                        <!-- 상품 1 -->
+                        <div class="swiper-slide daily-card">
+                            <div class="daily-img-box">
+                                <img src="#" alt="행운의 고래 꼬리 925실버 목걸이">
+                                <button class="wish-btn" aria-label="찜하기"></button>
+                            </div>
+                            <div class="daily-info">
+                                <p class="daily-name">행운의 고래 꼬리 925실버 목걸이</p>
+                                <p class="daily-price">49,000원</p>
+                            </div>
                         </div>
-                        <div class="daily-info">
-                            <p class="daily-name">행운의 고래 꼬리 925실버 목걸이</p>
-                            <p class="daily-price">49,000원</p>
+                        <!-- 상품 2 -->
+                        <div class="swiper-slide daily-card">
+                            <div class="daily-img-box">
+                                <img src="#" alt="퓨어몬드 말발굽 925실버 귀걸이">
+                                <button class="wish-btn" aria-label="찜하기"></button>
+                            </div>
+                            <div class="daily-info">
+                                <p class="daily-name">퓨어몬드 말발굽 925실버 귀걸이</p>
+                                <p class="daily-price">49,000원</p>
+                            </div>
                         </div>
-                    </div>
-                    <!-- 상품 2 -->
-                    <div class="daily-card">
-                        <div class="daily-img-box">
-                            <img src="#" alt="퓨어몬드 말발굽 925실버 귀걸이">
-                            <button class="wish-btn" aria-label="찜하기"></button>
+                        <!-- 상품 3 -->
+                        <div class="swiper-slide daily-card">
+                            <div class="daily-img-box">
+                                <img src="#" alt="쁘띠 더블 참 팔찌">
+                                <button class="wish-btn" aria-label="찜하기"></button>
+                            </div>
+                            <div class="daily-info">
+                                <p class="daily-name">쁘띠 더블 참 실버 팔찌</p>
+                                <p class="daily-price">69,000원</p>
+                            </div>
                         </div>
-                        <div class="daily-info">
-                            <p class="daily-name">퓨어몬드 말발굽 925실버 귀걸이</p>
-                            <p class="daily-price">49,000원</p>
-                        </div>
-                    </div>
-                    <!-- 상품 3 -->
-                    <div class="daily-card">
-                        <div class="daily-img-box">
-                            <img src="#" alt="쁘띠 더블 참 팔찌">
-                            <button class="wish-btn" aria-label="찜하기"></button>
-                        </div>
-                        <div class="daily-info">
-                            <p class="daily-name">쁘띠 더블 참 실버 팔찌</p>
-                            <p class="daily-price">69,000원</p>
-                        </div>
-                    </div>
-                </div><!-- daily-list 끝 -->
+                    </div><!-- swiper-wrapper 끝 -->
+                </div><!--  swiper 끝 -->
                 <!-- 스크롤바 띠 추가 -->
-                <div class="scrollbar-container">
-                    <div class="scrollbar-thumb"></div>
-                </div>
+                <div class="swiper-scrollbar"></div>
             </div>
 
         </div>
@@ -348,13 +379,9 @@
             <!-- 2. 가운데 이미지 두 개가 나란히 들어가는 콘텐츠 영역 -->
             <div class="showroom-content">
                 <!-- 왼쪽 큰 쇼룸 이미지 -->
-                <div class="showroom-img-box left">
-                    <img src="#" alt="OST 쇼룸 전경 1">
-                </div>
+                <div class="showroom-img-box left"></div>
                 <!-- 오른쪽 쇼룸 이미지 -->
-                <div class="showroom-img-box right">
-                    <img src="#" alt="OST 쇼룸 전경 2">
-                </div>
+                <div class="showroom-img-box right"></div>
             </div>
             <!-- 3. 하단 버튼 영역 -->
             <a href="#" class="store-finder-btn">
