@@ -1,2 +1,17 @@
 /* index.css */
-body {}
+body {background-color:var(--color-light);}
+/* 상단 광고 띠 배너 전체 영역 */
+.top-banner-swiper {
+    width: 100%;
+    height: 39px;
+    background-color:var(--color-light); /* 필요한 배경색으로 변경 가능 */
+    overflow: hidden;
+}
+/* 개별 슬라이드 안의 <p> 태그 정렬 */
+.top-banner-swiper .swiper-slide {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: var(--d-font-size-product);
+}
+
