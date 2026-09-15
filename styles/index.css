@@ -129,13 +129,14 @@ main .bestnew-container {
     padding: 100px 0;
 }
 main .bestnew-container .bestnew-tabs {
-    position:relative;
     display:flex;
     align-items: center; /* 세로 일정하게 정렬 */
     padding:0 130px;
     gap:20px;
 }
-main .bestnew-container .bestnew-tabs .tab-btn {}
+main .bestnew-container .bestnew-tabs .tab-btn {
+    position:relative;
+}
 main .bestnew-container .bestnew-tabs .tab-btn:first-child::after {
     content: '';/* (빈 문자열) */
     position: absolute;/* 부모 기준으로 위치를 고정 */
