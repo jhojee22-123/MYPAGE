@@ -8,5 +8,3 @@ const banner = new Swiper ('.top-banner-swiper',{
     },
     freeMode: true, //툭툭 끊기지 않고 부드럽게 이동
 })
-
-const
