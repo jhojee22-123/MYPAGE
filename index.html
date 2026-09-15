@@ -35,7 +35,7 @@
             <div class="swiper-wrapper top-banner-track">
                 <!-- 첫 번째 슬라이드 -->
                 <div class="swiper-slide banner-item-1">
-                    <p>OST 베스트셀러 주얼리 컬렉션을 만나보세요.</p>
+                    <p>OST 베스트셀러 <strong>주얼리 컬렉션을 만나보세요.</strong></p>
                 </div>
                 <!-- 두 번째 슬라이드 -->
                 <div class="swiper-slide banner-item-2">
@@ -43,9 +43,25 @@
                 </div>
                 <!-- 세 번째 슬라이드 -->
                 <div class="swiper-slide banner-item-1">
-                    <p>OST 베스트셀러 주얼리 컬렉션을 만나보세요.</p>
+                    <p>OST 베스트셀러 <strong>주얼리 컬렉션을 만나보세요.</strong></p>
                 </div>
                 <!-- 네 번째 슬라이드 -->
+                <div class="swiper-slide banner-item-2">
+                    <p><strong>NEW IN</strong> 신상품 더보기</p>
+                </div>
+                <!-- 다섯번째 슬라이드 -->
+                <div class="swiper-slide banner-item-1">
+                    <p>OST 베스트셀러 <strong>주얼리 컬렉션을 만나보세요.</strong></p>
+                </div>
+                <!-- 여섯번째 슬라이드 -->
+                <div class="swiper-slide banner-item-2">
+                    <p><strong>NEW IN</strong> 신상품 더보기</p>
+                </div>
+                <!-- 일곱번째 슬라이드 -->
+                <div class="swiper-slide banner-item-1">
+                    <p>OST 베스트셀러 <strong>주얼리 컬렉션을 만나보세요.</strong></p>
+                </div>
+                <!-- 여덟번째 슬라이드 -->
                 <div class="swiper-slide banner-item-2">
                     <p><strong>NEW IN</strong> 신상품 더보기</p>
                 </div>
@@ -116,72 +132,75 @@
         <div class="bestnew-container">
         <!-- 탭 메뉴 (BEST / NEW) -->
             <div class="bestnew-tabs">
-                <button type="button" class="tab-btn best-btn active">BEST</button>
-                <button type="button" class="tab-btn new-btn">NEW</button>
+                <button type="button" class="tab-btn active" data-target="best-list">BEST</button>
+                <button type="button" class="tab-btn" data-target="new-list">NEW</button>
             </div>
-            <!-- 상품 카드 그리드 목록 -->
-            <ul class="bestnew-list">
-                <!-- 1번 상품 -->
-                <li class="product-item">
-                    <a href="#">
-                        <div class="product-img">
-                            <img src="#" alt="꼬임 스트링 레이어드 원터치">
-                        </div>
-                        <div class="product-info">
-                            <h3 class="product-name">꼬임 스트링 레이어드 원터치</p>
-                            <p class="product-price">49,900원</p>
-                        </div>
-                    </a>
-                </li>
-                <!-- 2번 상품 -->
-                <li class="product-item">
-                    <a href="#">
-                        <div class="product-img">
-                            <img src="#" alt="블랙인덱스 솔라 여성용 커플 메쉬시계">
-                        </div>
-                        <div class="product-info">
-                            <h3 class="product-name">블랙인덱스 솔라 여성용 커플 메쉬시계</p>
-                            <p class="product-price">55,930원</p>
-                        </div>
-                    </a>
-                </li>
-                <!-- 3번 상품 -->
-                <li class="product-item">
-                    <a href="#">
-                        <div class="product-img">
-                            <img src="#" alt="프롱 체인팔찌">
-                        </div>
-                        <div class="product-info">
-                            <h3 class="product-name">프롱 체인팔찌</p>
-                            <p class="product-price">219,000원</p>
-                        </div>
-                    </a>
-                </li>
-                <!-- 4번 상품 -->
-                <li class="product-item">
-                    <a href="#">
-                        <div class="product-img">
-                            <img src="#" alt="사랑의약속 볼드 실버 커플링 여성용">
-                        </div>
-                        <div class="product-info">
-                            <h3 class="product-name">사랑의약속 볼드 실버 커플링 여성용</p>
-                            <p class="product-price">89,900원</p>
-                        </div>
-                    </a>
-                </li>
-                <!-- 5번 상품 -->
-                <li class="product-item">
-                    <a href="#">
-                        <div class="product-img">
-                            <img src="#" alt="퓨어몬트 문라이트 925 실버 목걸이">
-                        </div>
-                        <div class="product-info">
-                            <h3 class="product-name">퓨어몬트 문라이트 925 실버 목걸이</p>
-                            <p class="product-price">59,900원</p>
-                        </div>
-                    </a>
-                </li>
-            </ul>
+            <!-- 상품 목록영역 -->
+            <div class="bestnew-product"><!-- 추가 -->
+                <ul id="best-list" class="product-list active">
+                    <!-- 1번 상품 -->
+                    <li class="product-item">
+                        <a href="#">
+                            <div class="product-img">
+                                <img src="#" alt="꼬임 스트링 레이어드 원터치">
+                            </div>
+                            <div class="product-info">
+                                <h3 class="product-name">꼬임 스트링 레이어드 원터치</p>
+                                <p class="product-price">49,900원</p>
+                            </div>
+                        </a>
+                    </li>
+                    <!-- 2번 상품 -->
+                    <li class="product-item">
+                        <a href="#">
+                            <div class="product-img">
+                                <img src="#" alt="블랙인덱스 솔라 여성용 커플 메쉬시계">
+                            </div>
+                            <div class="product-info">
+                                <h3 class="product-name">블랙인덱스 솔라 여성용 커플 메쉬시계</p>
+                                <p class="product-price">55,930원</p>
+                            </div>
+                        </a>
+                    </li>
+                    <!-- 3번 상품 -->
+                    <li class="product-item">
+                        <a href="#">
+                            <div class="product-img">
+                                <img src="#" alt="프롱 체인팔찌">
+                            </div>
+                            <div class="product-info">
+                                <h3 class="product-name">프롱 체인팔찌</p>
+                                <p class="product-price">219,000원</p>
+                            </div>
+                        </a>
+                    </li>
+                    <!-- 4번 상품 -->
+                    <li class="product-item">
+                        <a href="#">
+                            <div class="product-img">
+                                <img src="#" alt="사랑의약속 볼드 실버 커플링 여성용">
+                            </div>
+                            <div class="product-info">
+                                <h3 class="product-name">사랑의약속 볼드 실버 커플링 여성용</p>
+                                <p class="product-price">89,900원</p>
+                            </div>
+                        </a>
+                    </li>
+                    <!-- 5번 상품 -->
+                    <li class="product-item">
+                        <a href="#">
+                            <div class="product-img">
+                                <img src="#" alt="퓨어몬트 문라이트 925 실버 목걸이">
+                            </div>
+                            <div class="product-info">
+                                <h3 class="product-name">퓨어몬트 문라이트 925 실버 목걸이</p>
+                                <p class="product-price">59,900원</p>
+                            </div>
+                        </a>
+                    </li>
+                </ul>
+                <ul id="new-list" class="product-list"><!-- 추가예정 --></ul>
+            </div>
         </div>
         <!-- 컬렉션영역 -->
         <div class="collection-container">

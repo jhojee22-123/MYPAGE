@@ -3,7 +3,12 @@ body {
     background-color:var(--color-light);
     font-family:'Pretendard', sans-serif;}
 /* 상단 광고 띠 배너 전체 영역 */
-header {}
+header {
+    position:fixed;/* 위치고정 */
+    left:0; top:0; /* 좌측 상단으로 딱 붙이기 */
+    width:100%; /* 화면 가로 폭 꽉 채우기(안하면 내용물만큼쪼그라듦) */
+     z-index: 999; /* 설정중 맨위층으로옮기기 */
+}
 header .top-banner-swiper {
     height: 39px;
     background-color:var(--color-light); /* 필요한 배경색으로 변경 가능 */
@@ -20,6 +25,18 @@ header .top-banner-swiper .swiper-wrapper .swiper-slide {
     align-items: center;
     font-size: var(--d-font-size-product);
     white-space: nowrap;
+}
+header .top-banner-swiper .swiper-wrapper .banner-item-1 p {
+    font-weight:var(--font-weight-s);
+}
+header .top-banner-swiper .swiper-wrapper .banner-item-1 p strong{
+    font-weight:var(--font-weight-m);
+}
+header .top-banner-swiper .swiper-wrapper .banner-item-2 p {
+    font-weight:var(--font-weight-m);
+}
+header .top-banner-swiper .swiper-wrapper .banner-item-2 p strong{
+    font-weight:var(--font-weight-xl);
 }
 header .header-inner {
     height:75px;
@@ -52,8 +69,9 @@ header .header-inner nav .gnb li {
     position: relative;/* 서브메뉴가 이 li를 기준으로 붙도록 설정 */
 }
 header .header-inner nav .gnb li a {
-    font-weight:var(--font-weight-m);
-    /* 색상변경필요 */
+    letter-spacing: 0.04em; /* 피그마와 눈대중으로 구현 */
+    color:var(--color-light);
+    /* font-weight:var(--font-weight-m); 피그마와 눈대중으로 삭제함 */
 }
 header .header-inner nav .gnb li .submenu {
     display: none; 
@@ -66,7 +84,6 @@ header .header-inner nav .gnb li .submenu li {}
 header .header-inner nav .gnb li .submenu li a {
     display: block;}
 header .header-inner .header-icon {
-    background-color: black; /* 임시 */
     display: flex;
     align-items: center;
     gap: 20px; /* 아이콘 사이 간격 */
@@ -80,13 +97,10 @@ header .header-inner .header-icon a img{
 
 }
 main {}
-main .main-banner-swiper {height:865px;}
-main .main-banner-swiper .swiper-wrapper {
+main .main-banner-swiper {width:100%; height:100vh;}/* 가로세로 높이만주기 */
+main .main-banner-swiper .swiper-wrapper {/* 아무것도 안주기 */
 }
-main .main-banner-swiper .swiper-wrapper .swiper-slide {
-    position:relative;
-    width:100%;
-    height:100%;
+main .main-banner-swiper .swiper-wrapper .swiper-slide {/* 대부분 값 내장- 필요한 값만주기 */
     display: flex;
     align-items: center;
 }
@@ -106,4 +120,38 @@ main .main-banner-swiper .swiper-wrapper .swiper-slide .banner-text h2 {
     font-size:4.375em;
     margin-bottom: 20px; /* 제목과 설명글 사이 간격 */
 }
-main .main-banner-swiper .swiper-wrapper .swiper-slide .banner-text p {}
+main .main-banner-swiper .swiper-wrapper .swiper-slide .banner-text p {
+    font-size:1.375em;
+}
+main .main-banner-swiper .swiper-scrollbar {}
+/* 2행 */
+main .bestnew-container {
+    padding: 100px 0;
+}
+main .bestnew-container .bestnew-tabs {
+    position:relative;
+    display:flex;
+    align-items: center; /* 세로 일정하게 정렬 */
+    padding:0 130px;
+    gap:20px;
+}
+main .bestnew-container .bestnew-tabs .tab-btn {}
+main .bestnew-container .bestnew-tabs .tab-btn:first-child::after {
+    content: '';/* (빈 문자열) */
+    position: absolute;/* 부모 기준으로 위치를 고정 */
+    top: 50%;/* 위에서 50% 지점에 내리기 */
+    transform: translateY(-50%); /* 높이의 반만큼 위로 올려서 정확한 수직 정렬 */
+    right: -1px;/* BEST 버튼 오른쪽 바깥으로 떨어지게 설정 (-값 또는 px 조절) */
+    width: 1px;/* 선의 두께 */
+    height: 21px;/* 선의 높이 */
+    background-color:var(--color-light-gray);   /* 선의 색상 (회색) */
+    display: inline-block;/* 인라인처럼 나란히설수잇으면서 원하는대로 키울수잇는 블록의 장점결합 */
+}
+main .bestnew-container .bestnew-product .best-list {}
+main .bestnew-container .bestnew-product .best-list .product-item {}
+main .bestnew-container .bestnew-product .best-list .product-item a {}
+main .bestnew-container .bestnew-product .best-list .product-item a .product-img {}
+main .bestnew-container .bestnew-product .best-list .product-item a .product-img img {}
+main .bestnew-container .bestnew-product .best-list .product-item a .product-info {}
+main .bestnew-container .bestnew-product .best-list .product-item a .product-info h3 {}
+main .bestnew-container .bestnew-product .best-list .product-item a .product-info p {}

@@ -23,10 +23,10 @@
     --m-font-size-title: 1em;        /* 레이아웃제목 (16px 기준) */
     
     /* 글자 굵기 */
-    --font-weight-s: 400;
-    --font-weight-m: 500;
-    --font-weight-l: 600;
-    --font-weight-xl: 800;
+    --font-weight-s: 400; /* regular */
+    --font-weight-m: 500; /* medium */
+    --font-weight-l: 600; /* semibold */
+    --font-weight-xl: 800; /* extrabold */
 
     /* 여백 */
     /* 데스크탑 */
