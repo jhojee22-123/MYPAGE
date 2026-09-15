@@ -1,17 +1,109 @@
 /* index.css */
-body {background-color:var(--color-light);}
+body {
+    background-color:var(--color-light);
+    font-family:'Pretendard', sans-serif;}
 /* 상단 광고 띠 배너 전체 영역 */
-.top-banner-swiper {
-    width: 100%;
+header {}
+header .top-banner-swiper {
     height: 39px;
     background-color:var(--color-light); /* 필요한 배경색으로 변경 가능 */
     overflow: hidden;
 }
-/* 개별 슬라이드 안의 <p> 태그 정렬 */
-.top-banner-swiper .swiper-slide {
+/* Swiper Wrapper */
+header .top-banner-swiper .swiper-wrapper {
+    transition-timing-function:linear !important; /* Swiper Wrapper가 항상 일정한 속도로 움직이도록 고정 */
+}
+/* Swiper Slide */
+header .top-banner-swiper .swiper-wrapper .swiper-slide {
+    width: auto !important;
     display: flex;
     align-items: center;
-    justify-content: center;
     font-size: var(--d-font-size-product);
+    white-space: nowrap;
 }
+header .header-inner {
+    height:75px;
+    display:flex;
+    align-items: center; /* 세로정렬중앙 */
+    justify-content: space-between; /* 양 끝으로 밀어내기 (로고 / GNB / 아이콘) */
+    padding:0 80px; /* 안쪽여백 */
+    position: relative; /* 상대적 위치고정 */
+}
+header .header-inner .logo_nav {
+    display: flex;
+    align-items: center; /* 세로 정렬 중앙 */
+    gap: 50px; /* 로고와 GNB 사이 간격 50px */
+}
+header .header-inner .logo {}
+header .header-inner .logo a {}
+header .header-inner .logo a img {
+    display:block; /* img 블록처리여백없애기 */
+    width:100px;
+}
+header .header-inner nav {}
+header .header-inner nav .gnb {
+    display:flex; /* 자동정렬 */
+    align-items: center;/* 세로축 중앙정렬 */
+    gap: 60px;/* 메뉴 글자 사이의 간격 */
+    margin: 0; /* 마진 간격초기화 */
+    padding: 0; /* 패딩 간격초기화 */
+}
+header .header-inner nav .gnb li {
+    position: relative;/* 서브메뉴가 이 li를 기준으로 붙도록 설정 */
+}
+header .header-inner nav .gnb li a {
+    font-weight:var(--font-weight-m);
+    /* 색상변경필요 */
+}
+header .header-inner nav .gnb li .submenu {
+    display: none; 
+    position: absolute;
+}
+header .header-inner .gnb > li:hover .submenu {
+    display: block;/* 평소에 숨기기+위치 디자인필요 */
+}
+header .header-inner nav .gnb li .submenu li {}
+header .header-inner nav .gnb li .submenu li a {
+    display: block;}
+header .header-inner .header-icon {
+    background-color: black; /* 임시 */
+    display: flex;
+    align-items: center;
+    gap: 20px; /* 아이콘 사이 간격 */
 
+}
+header .header-inner .header-icon a{}
+header .header-inner .header-icon a img{
+    width: 22px;/* 아이콘 크기 조절 */
+    height: 22px;
+    display: block;
+
+}
+main {}
+main .main-banner-swiper {height:865px;}
+main .main-banner-swiper .swiper-wrapper {
+}
+main .main-banner-swiper .swiper-wrapper .swiper-slide {
+    position:relative;
+    width:100%;
+    height:100%;
+    display: flex;
+    align-items: center;
+}
+main .main-banner-swiper .swiper-wrapper .slide1 {
+    background-image: url(../images/banner-slide1.jpg);
+    background-size: cover;/* 이미지가 슬라이드 전체를 채우게 */
+    background-position: center;  /* 이미지 정중앙 */
+    background-repeat: no-repeat; /* 이미지 반복막기*/
+}
+main .main-banner-swiper .swiper-wrapper .swiper-slide .banner-text {
+    position:absolute;
+    right:300px;
+    text-align: center;
+}
+main .main-banner-swiper .swiper-wrapper .swiper-slide .banner-text h2 {
+    font-family: 'Times New Roman', serif;
+    font-size:4.375em;
+    margin-bottom: 20px; /* 제목과 설명글 사이 간격 */
+}
+main .main-banner-swiper .swiper-wrapper .swiper-slide .banner-text p {}
